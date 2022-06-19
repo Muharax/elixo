@@ -1,0 +1,124 @@
+.simple-notification-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 310px;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.simple-notification-wrapper {
+  max-height: 0px;
+
+  /* Animation on creation */
+  -webkit-animation: pushDown 500ms forwards;
+  animation: pushDown 500ms forwards;
+}
+
+.simple-notification {
+  position: relative;
+  color: white; /* Default */
+  border: 1px solid transparent;
+  border-radius: 24px;
+  padding: 15px;
+  padding-right: 20px;
+  width: 300px;
+  opacity: 1;
+  margin-top: 10px;
+  border: 1px solid transparent;
+  font-family: sans-serif;
+
+  /* Animation on creation */
+  -webkit-animation:slideIn 500ms forwards;
+  animation: slideIn 500ms forwards;
+  -webkit-animation-delay: 100ms;
+  animation-delay: 100ms;
+}
+
+.simple-notification .close-notification {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  background-image: url("close-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  top: 10px;
+  right: 10px;
+  font-size: 11px;
+  color: #000;
+  opacity: 0.3;
+  cursor: pointer;
+}
+
+.close-notification:hover {
+  opacity: 0.7;
+}
+
+.simple-notification.warning {
+  color: #00FF00;
+  background-color: #88BBFF;
+  border-color: red;
+}
+
+.simple-notification.good {
+  color: #000000;
+  background-color: #88BBFF;
+  border-color: red;
+  
+}
+
+.simple-notification.danger {
+   color: #00FF00;
+  background-color: #010000;
+  border-color: red;
+}
+
+.simple-notification.attention {
+  color: #31708f;
+   color: #00FF00;
+  background-color: #010000;
+  border-color: red;
+}
+
+/* Outro transition */
+.simple-notification.fade-out {
+  opacity: 0;
+  transition: opacity 3500ms ease-in-out;
+  -moz-transition: opacity 3500ms ease-in-out;
+  -webkit-transition: opacity 3500ms ease-in-out;
+}
+
+
+/* CSS Animations */
+@keyframes slideIn {
+  100% { margin-left: 0px; }
+}
+
+@-webkit-keyframes slideIn {
+  100% { margin-left: 0px; }
+}
+
+@-moz-keyframes slideIn {
+  100% { margin-left: 0px; }
+}
+
+@-o-keyframes slideIn {
+  100% { margin-left: 0px; }
+}
+
+@keyframes pushDown {
+  100% { max-height: 500px; }
+}
+
+@-webkit-keyframes slideIn {
+  100% { max-height: 500px; }
+}
+
+@-moz-keyframes slideIn {
+  100% { max-height: 500px; }
+}
+
+@-o-keyframes slideIn {
+  100% { max-height: 500px; }
+}
