@@ -23,7 +23,7 @@ defined('URL') or define('URL', 'http://'.$_SERVER['SERVER_NAME']. "/elixo/");
 			<link rel="stylesheet" href="<?php echo URL;?>js/simplenotify/simpleNotifyStyle.css">
 			<script src="<?php echo URL;?>js/simplenotify/simpleNotify.js"></script>
 
-			<title>Skynet</title>
+			<title>SKYNET</title>
 			
 			
 <?php include 'zmienne.php';?>

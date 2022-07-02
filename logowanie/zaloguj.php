@@ -50,6 +50,7 @@ error_reporting (0);
 								$_SESSION['nazwisko'] 		= $wiersz['nazwisko'];
 								$_SESSION['uprawnienia'] 	= $wiersz['uprawnienia'];
 								$_SESSION['pkt'] 			= $wiersz['pkt'];
+								$_SESSION['logo'] 			= $wiersz['logo'];
 								
 								$logowania 					= $wiersz['logowania'];
 								$user 						= $wiersz['user'];

@@ -23,12 +23,13 @@
 	</div>
 	
 	<div class="dodaj-ogloszenie-ramka">
-		<input type="hidden" name="size" value="512000" />
-		<input type="file" name="files" accept=".png, .jpeg, .jpg" />
-		<input type="submit" value="wyślij" />
+	
+    <input type="file" class="custom-file-input"  name="image[]" multiple="" accept=".png, .jpeg, .jpg">
+
 	</div>
 	
 	
 	
 	<div><button type="submit" name="dodaj-ogloszenie-button">Dodaj ogłoszenie</button></div>
 </div>
+</form>

@@ -1,14 +1,9 @@
 <div class="logo-out">
 	<div class="logo">
-	
-<div class="szukaj">
-	<button class="szukaj-button">Szukaj</button>
-	<input type="text" class="sw">
-	
-</div>
+
 		<div class="logo-w1">
 			<a href="<?php echo URL;?>index.php">
-				<!-- <img width="50px" height="40px" src="/al/img/skynet.png">-->
+				<img class="w50" src="<?php echo URL;?>img/shop.png">
 			</a>
 		</div>
 		
@@ -18,7 +13,9 @@
 		</div>
 		
 	</div>
-
+<div class="koszyk">
+	<img class="w50" src="<?php echo URL;?>img/pusty-koszyk-png.png"></img>
+</div>
 <?php 
 
 if(isset($_SESSION['zalogowany'])){
@@ -26,6 +23,7 @@ if(isset($_SESSION['zalogowany'])){
 	echo '<div class="table_center">
 				  <div class="drop-down">
 					<div id="dropDown" class="drop-down__button">
+					<img class="w50" src="'.URL.'img/'.$_SESSION['logo'].'.png"></img>
 						<span class="drop-down__name">'.$_SESSION['user'].'</span>
 					</div>
 					<div class="drop-down__menu-box">

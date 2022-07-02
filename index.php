@@ -14,7 +14,7 @@
 	}
 	.ogloszenia-promowane{
 		width: fit-content;
-		border: 1px solid black; as
+		border: 1px solid black;
 	}
 </style>
 <?php 		
@@ -23,18 +23,15 @@
 	require ('logo.php');
 ?>
 
-<div class="menu">
 
-	Cena
-	<br>
-	OD <input type="number" class="swx">
-	DO <input type="number" class="swx">
-	
+<div class="content">
+
+<div class="karty-rozwijane">
+	<?php include ('menu.php')?>
 </div>
 
 
 
-<div class="content">
 	<div class="ogloszenia-promowane">Ogłoszenia promowane
 		<div class="ogloszenie">
 			<div class="topic">Basen stelażowy okrągły Bestway 56416 366 x 366 cm</div>
@@ -56,6 +53,11 @@
 					<div class="opis2">266 osoby kupiły</div>
 				</div>
 		</div>
+	</div>
+	
+	
+	<div class="ogloszenia-prawy">
+		
 	</div>
 	
 </div>
